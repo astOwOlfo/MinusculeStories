@@ -1,0 +1,12 @@
+anthropic==0.48.0
+beartype==0.14.1
+datasets==3.2.0
+einops==0.8.1
+jaxtyping==0.2.38
+joblib==1.4.2
+more_itertools==10.6.0
+openai==1.65.1
+pathlib2==2.3.7.post1
+plotly==6.0.0
+torch==2.6.0+cu126
+tqdm==4.67.1
