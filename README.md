@@ -70,12 +70,18 @@ $ python train.py
 
 Generate Minuscule Stories:
 ```
-$ python generate_minuscule_stories.py --n-api-calls 1250000 --output data/minuscule-stories.jsonl --allowed-words-file <(head -n 256 data/tiny-stories-words-by-frequency) --api-key <your openai api key> --batch-size 256
+$ python generate_minuscule_stories.py \
+    --n-api-calls 1250000 --output data/minuscule-stories.jsonl \
+    --allowed-words-file <(head -n 256 data/tiny-stories-words-by-frequency) \
+    --api-key <your openai api key> \
+    --batch-size 256
 ```
 
 Generate Minuscule WinoGrande:
 ```
-$ ANTHROPIC_API_KEY=<your anthropic api key> python make_minuscule_winogrande.py --output data/minuscule-winogrande-train.
-json --allowed-words-filename  <(head -n 256 data/tiny-stories-words
--by-frequency) --max-attempts 2048 --dataset-split train
+$ ANTHROPIC_API_KEY=<your anthropic api key> python make_minuscule_winogrande.py \
+     --output data/minuscule-winogrande-train.json \
+     --allowed-words-filename  <(head -n 256 data/tiny-stories-words-by-frequency) \
+     --max-attempts 2048 \
+     --dataset-split train
 ```
